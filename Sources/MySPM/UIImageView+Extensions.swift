@@ -30,13 +30,13 @@ public extension UIImageView {
      */
     func loadImageWith(url: String?, placeholderImage: UIImage?) {
         
-        if showPlaceholder && placeholderImage != nil {
+        if placeholderImage != nil {
             DispatchQueue.main.async {
                 self.image = placeholderImage
             }
         }
         
-        guard let url = url, let validUrl = URL(string: url), url.isValidURL else {
+        guard let url = url, let validUrl = URL(string: url) else {
             return
         }
         
