@@ -28,13 +28,11 @@ public extension UIImageView {
         - showPlaceholder: To show the image default
         - url: The url of image
      */
-    func loadImageWith(url: String?, showPlaceholder: Bool) {
+    func loadImageWith(url: String?, placeholderImage: UIImage?) {
         
-        let placeholder = showPlaceholder ? Settings.share.placeholderImage : nil
-        
-        if showPlaceholder && placeholder != nil {
+        if showPlaceholder && placeholderImage != nil {
             DispatchQueue.main.async {
-                self.image = placeholder
+                self.image = placeholderImage
             }
         }
         
