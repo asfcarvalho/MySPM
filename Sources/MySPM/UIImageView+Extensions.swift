@@ -28,7 +28,7 @@ public extension UIImageView {
         - showPlaceholder: To show the image default
         - url: The url of image
      */
-    func loadImageWith(url: String?, placeholderImage: UIImage?) {
+    func loadImageWith(url: String?, placeholderImage: UIImage?, loadCacheEnabled: Bool = true) {
         
         if placeholderImage != nil {
             DispatchQueue.main.async {
@@ -40,7 +40,7 @@ public extension UIImageView {
             return
         }
         
-        if let image = loadCache(url: url) {
+        if loadCacheEnabled, let image = loadCache(url: url) {
             DispatchQueue.main.async {
                 self.image = image
             }
