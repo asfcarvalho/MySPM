@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
     s.author       = 'Anderson Carvalho'
     s.platform     = :ios, '13.0'
     s.source       = { :git => 'https://github.com/asfcarvalho/MySPM.git', :tag => "#{s.version}" }
-    s.source_files = 'MySPM/MySPM/Classes/**/*.swift' , 'MySPM/MySPM/Classes/**/*.h'
+    s.source_files = 'MySPM/MySPM/Classes/*.swift'
     s.static_framework = true
 end
