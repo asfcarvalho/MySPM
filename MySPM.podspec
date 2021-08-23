@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'MySPM'
-    s.version      = '0.1.3'
+    s.version      = '0.1.4'
     s.swift_version = '5.0'
     s.summary      = 'SDK for iOS'
     s.homepage     = 'https://github.com/asfcarvalho/MySPM'
