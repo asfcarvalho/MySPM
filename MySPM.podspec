@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
     s.summary      = 'SDK for iOS'
     s.homepage     = 'https://github.com/asfcarvalho/MySPM'
     s.license      = { :type => 'MIT', :file => 'LICENSE' }
-    s.author       = { 'Anderson Carvalho' => 'asfcarvalho@icloud.com' }
+    s.author       = 'Anderson Carvalho'
     s.platform     = :ios, '13.0'
     s.source       = { :git => 'https://github.com/asfcarvalho/MySPM.git', :tag => "#{s.version}" }
     s.source_files = 'MySPM/MySPM/Classes/**/*.swift' , 'MySPM/MySPM/Classes/**/*.h'
